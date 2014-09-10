@@ -20,7 +20,7 @@ One important part we haven't talked about yet is namespacing. There might be an
 
 ```ruby
 # lib/tasks/import.rake
-namespace :import
+namespace :import do
   desc "Download data"
   task :download do
     puts "download data from source"
@@ -74,7 +74,7 @@ Here is the full Rakefile of what we have done today:
 
 ```ruby
 # lib/tasks/import.rake
-namespace :import
+namespace :import do
   desc "Download data"
   task :download => :environment do
     puts "download data from source"
